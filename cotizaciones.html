@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <!--NAV-->
     <nav>
@@ -16,15 +17,15 @@
             <a href="#">DEINSA HONDURAS</a>
         </div>
         <div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
-            <li><a href="">Ofertas del mes</a></li>
-            <li><a href="cotizaciones.html">Cotizaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-    <div><a href="#">Cotizar por WhatsApp</a></div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="tabla.html">Tabla comparativa</a></li>
+                <li><a href="cotizaciones.html">Cotizaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div><a href="#">Cotizar por WhatsApp</a></div>
     </nav>
 
     <!--CALCULADORA-->
@@ -37,22 +38,36 @@
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
                 <div class="cuerpo-contenedor">
-                    <form action="">
+                    <form action="#cotizaciones" method="post">
+                        <!--Campo 1-->
                         <div>
-                            <input type="text">
-                            <label for=""></label>
+                            <div>
+                                <input type="number"   min="0" required>
+                                <label for="">Cantidad de unidades</label>
+                            </div>
                         </div>
+                        <!--Campo 2-->
                         <div>
-                            <input type="text">
-                            <label for=""></label>
+                            <div>
+                                <select name="" id="">
+                                    <option value="" disabled selected>--Seleccione la ciudad de entrega y el flete--</option>
+                                    <option value="">San Pedro Sula - Flete: L.500</option>
+                                    <option value="">Tegucigalpa - Flete: L.1,200</option>
+                                    <option value="">Otras regiones - Flete: L.2,000</option>
+                                </select>
+                            </div>
                         </div>
+                        <!--Boton Cotiza-->
+                            <div>
+                                <button>
+                                    <i class="bi bi-calculator"></i>
+                                </button>
+                            </div>
+                        <!--Resultado de la cotizacion-->
                         <div>
-                            <input type="text">
-                            <label for=""></label>
-                        </div>
-                        <div>
-                            <input type="text">
-                            <label for=""></label>
+                            <div>
+                                <label for="">Resultado de la cotizacion</label>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -61,4 +76,5 @@
         </section>
     </main>
 </body>
+
 </html>
