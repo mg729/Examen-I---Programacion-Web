@@ -32,70 +32,76 @@
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-        <div class="btn btn-outline-success"><i class="bi bi-whatsapp"></i><a class="nav-link disabled" href="#">Cotizar
+        <div class="btn btn-outline-success"><a class="nav-link disabled" href="#"> <i class="bi bi-whatsapp"></i>
+                Cotizar
                 por WhatsApp</a></div>
     </nav>
     <!--FORMULARIO PARA REQUISITO y LICITACION-->
     <main>
-        <section>
-            <article>
-                <div>
-                    <h2>Formulario para Requisitos y Licitacion</h2>
-                </div>
-                <div>
-                    <form action="" method="post">
-                        <!--Campo 1-->
-                        <div>
-                            <div>
-                                <input type="text" required>
-                                <label for="">Nombre de la empresa o Contratista Solicitante</label>
-                            </div>
+        <section class="py-5 bg-warning">
+            <article class="container py-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+                        <div class="row g-3">
+                            <h2>Formulario para Requisitos y Licitacion</h2>
                         </div>
-                        <!--Campo 2-->
                         <div>
-                            <div>
-                                <input type="text" minlength="14" required>
-                                <label for="" pattern="">RTN</label>
-                            </div>
+                            <form action="" method="post">
+                                <!--Campo 1-->
+                                <div class="form-floating py-2">
+                                    <div>
+                                        <input class="form-control" type="text" required>
+                                        <label for="">Nombre de la empresa o Contratista Solicitante</label>
+                                    </div>
+                                </div>
+                                <!--Campo 2-->
+                                <div class="form-floating py-2">
+                                    <div>
+                                        <input class="form-control" type="text" minlength="14" required>
+                                        <label for="" pattern="">RTN</label>
+                                    </div>
+                                </div>
+                                <!--Campo 3-->
+                                <div class="form-floating py-2">
+                                    <div>
+                                        <input class="form-control" type="email" pattern="" required>
+                                        <label for="">Correo Electronico Corporativo</label>
+                                    </div>
+                                </div>
+                                <!--Campo 4-->
+                                <div class="form-floating py-2">
+                                    <div>
+                                        <input class="form-control" type="text" required>
+                                        <label for="">Numero de telefono</label>
+                                    </div>
+                                </div>
+                                <!--Campo 5-->
+                                <div class="form-floating py-2">
+                                    <div>
+                                        <select class="form-select" name="" id="" required>
+                                            <option value="" disabled selected> --Ninguno--</option>
+                                            <option value="">Cortes</option>
+                                            <option value="">Francisco Morazan</option>
+                                            <option value="">Comayagua</option>
+                                            <option value="">Choluteca</option>
+                                            <option value="">Olancho</option>
+                                        </select>
+                                        <label for="">Departamento de Entrega</label>
+                                    </div>
+                                </div>
+                                <!--Botones-->
+                                <div>
+                                    <div class="py-4">
+                                        <button class="btn btn-outline-warning btn-lg fw-bold w-100 shadow" type="submit"><i class="bi bi-send"></i> Enviar</button>
+                                    </div>
+                                    <div class="py-4">
+                                        <button class="btn btn-dark btn-lg fw-bold w-100 shadow" type="reset"><i class="bi bi-arrow-clockwise"></i>Reiniciar el
+                                            formulario</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <!--Campo 3-->
-                        <div>
-                            <div>
-                                <input type="email" pattern="" required>
-                                <label for="">Correo Electronico Corporativo</label>
-                            </div>
-                        </div>
-                        <!--Campo 4-->
-                        <div>
-                            <div>
-                                <input type="text" required>
-                                <label for="">Numero de telefono</label>
-                            </div>
-                        </div>
-                        <!--Campo 5-->
-                        <div>
-                            <div>
-                                <select name="" id="" required>
-                                    <option value="" disabled selected> --Ninguno--</option>
-                                    <option value="">Cortes</option>
-                                    <option value="">Francisco Morazan</option>
-                                    <option value="">Comayagua</option>
-                                    <option value="">Choluteca</option>
-                                    <option value="">Olancho</option>
-                                </select>
-                                <label for="">Departamento de Entrega</label>
-                            </div>
-                        </div>
-                        <!--Botones-->
-                        <div>
-                            <div>
-                                <button type="submit"><i class="bi bi-send"></i> Enviar</button>
-                            </div>
-                            <div>
-                                <button type="reset"><i class="bi bi-arrow-clockwise"></i>Reiniciar el formulario</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </article>
         </section>
