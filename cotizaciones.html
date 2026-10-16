@@ -32,53 +32,62 @@
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-        <div class="btn btn-outline-success"><i class="bi bi-whatsapp"></i><a class="nav-link disabled" href="#">Cotizar
+        <div class="btn btn-outline-success"><a class="nav-link disabled" href="#"> <i class="bi bi-whatsapp"></i>
+                Cotizar
                 por WhatsApp</a></div>
     </nav>
 
     <!--CALCULADORA-->
     <main>
-        <section>
-            <!--N/T: Se modificaran los nombres de las clases. Solo son una guia-->
-            <div class="contenedor">
-                <div class="titulo-contenedor">
-                    <h2>Cotizaciones</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <section class="py-5 bg-warning">
+            <div class="container py-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+                            <div class="row g-3">
+                                <h2>Cotizaciones</h2>
+                                <p>Para realiza tu cotizacion, selecciona la cantidad de unidades y la localizacion donde deseas comprar los productos.</p>
+                            </div>
+                            <div class="">
+                                <form action="#cotizaciones" method="post">
+                                    <!--Campo 1-->
+                                    <div class="form-floating">
+                                        <div>
+                                            <input class="form-control"  type="number" min="0" required>
+                                            <label for="">Cantidad de unidades</label>
+                                        </div>
+                                    </div>
+                                    <!--Campo 2-->
+                                    <div class="form-floating">
+                                        <div>
+                                            <select class="form-select" name="" id="">
+                                                <option value="" disabled selected>--Seleccione la ciudad de entrega y
+                                                    el flete--
+                                                </option>
+                                                <option value="">San Pedro Sula - Flete: L.500</option>
+                                                <option value="">Tegucigalpa - Flete: L.1,200</option>
+                                                <option value="">Otras regiones - Flete: L.2,000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--Boton Cotiza-->
+                                    <div class="py-4 px-5">
+                                        <button class="btn btn-outline-warning btn-lg fw-bold w-100 shadow">
+                                            <i class="bi bi-calculator"></i> Cotizar
+                                        </button>
+                                    </div>
+                                    <!--Resultado de la cotizacion-->
+                                    <div class="form-floating">
+                                        <div>
+                                            <label for="">Resultado de la cotizacion:</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cuerpo-contenedor">
-                    <form action="#cotizaciones" method="post">
-                        <!--Campo 1-->
-                        <div>
-                            <div>
-                                <input type="number"   min="0" required>
-                                <label for="">Cantidad de unidades</label>
-                            </div>
-                        </div>
-                        <!--Campo 2-->
-                        <div>
-                            <div>
-                                <select name="" id="">
-                                    <option value="" disabled selected>--Seleccione la ciudad de entrega y el flete--</option>
-                                    <option value="">San Pedro Sula - Flete: L.500</option>
-                                    <option value="">Tegucigalpa - Flete: L.1,200</option>
-                                    <option value="">Otras regiones - Flete: L.2,000</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!--Boton Cotiza-->
-                            <div>
-                                <button>
-                                    <i class="bi bi-calculator"></i>
-                                </button>
-                            </div>
-                        <!--Resultado de la cotizacion-->
-                        <div>
-                            <div>
-                                <label for="">Resultado de la cotizacion</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
             </div>
 
         </section>
