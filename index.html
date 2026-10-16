@@ -38,62 +38,89 @@
     </nav>
 
     <!--Hero-->
-    <!--Las etiquetas se modificaran mas adelante-->
-    <header>
+    <header class="bg-warning p-5">
         <!--Imagen del Hero-->
-        <div class="">
-            <img src="https://images.unsplash.com/photo-1779896412200-e1047994622b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDE%3D"
-                alt="imagen-hero">
-            <div class="texto-hero">
-                <p>Lorem ipsum dolor sit amet.</p>
+        <div class="container py-lg-4">
+            <div class="text-center">
+                <h2>Bienvenidos a DEINSA HONDURAS</h2>
+                <article>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, reprehenderit?</p>
+                </article>
+            </div>
+            <div class="row aling-items-lg-center g-5">
+                <img class=""
+                    src="https://images.unsplash.com/photo-1779896412200-e1047994622b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDE%3D"
+                    alt="imagen-hero">
             </div>
         </div>
     </header>
 
     <main>
         <section>
-            <h2>Bienvenidos a DEINSA HONDURAS</h2>
-            <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, reprehenderit?</p>
-            </article>
-        </section>
-        <section>
-            <h2>Nosotros te ofrecemos</h2>
-            <div class="contenedor">
-                <div class="card">
-                    <a href="catalogo.html">Catalogo</a>
-                    <p>Puedes ver los productos que te ofrecemos.</p>
-                </div>
-                <div class="card">
-                    <a href="tabla.html">Tabla comparativa</a>
-                    <p>Compara nuestros precios.</p>
-                </div>
-                <div class="card">
-                    <a href="cotizaciones.html">Cotizaciones</a>
-                    <p>Cotiza tus productos, aqui mismo</p>
-                </div>
-                <div class="card">
-                    <a href="contacto.html">Contacto</a>
-                    <p>Si tienes alguna duda, contactanos.</p>
+            <div class="my-4">
+                <h2 class="text-center">Nosotros te ofrecemos</h2>
+            </div>
+            <div class="container" data-bs-theme="dark">
+                <div class="row g-4 text-center">
+                    <!--1-->
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <i class="bi bi-bucket-fill"></i>
+                        <a class="nav-link" href="catalogo.html">Catalogo</a>
+                        <p>Puedes ver los productos que te ofrecemos.</p>
+                    </div>
+                    <!--2-->
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <i class="bi bi-table"></i>
+                        <a class="nav-link" href="tabla.html">Tabla comparativa</a>
+                        <p>Compara nuestros precios.</p>
+                    </div>
+                    <!--3-->
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <i class="bi bi-calculator-fill"></i>
+                        <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+                        <p>Cotiza tus productos, aqui mismo</p>
+                    </div>
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                        <i class="bi bi-question-circle-fill"></i>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <p>Si tienes alguna duda, contactanos.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white py-5 mt-auto border-top">
         <div class="container">
-            <div>
-                <div>
-                    <h5>DEINSA HONDURAS</h5>
-                    <p></p>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="text text-warning"> <i class="bi bi-amd"></i> DEINSA HONDURAS</h5>
+                    <p><i>Reconocida distribuidora de suministros electricos industriales y sistemas de energia solar en
+                            San Pedro Sula y Tegucigalpa.</i></p>
                 </div>
-                <div>
-                    <h5>Enlace a redes sociales</h5>
-                    <ul>
-                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
-                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
-                    </ul>
+
+                <div class="col-12 col-md-4">
+                    <div>
+                        <h5 class="text-warning"> <i class="bi bi-person-fill"></i> Enlace a redes sociales</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-facebook"></i>
+                                    Facebook</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-whatsapp"></i>
+                                    WhatsApp</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-instagram"></i>
+                                    Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div>
+                        <h5 class="text-warning"> <i class="bi bi-geo-alt-fill"></i> Ubicaciones</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">"Boulevard del Norte, San Pedro Sula" - Tel: 2551-XXXX</li>
+                            <li class="nav-item">"Anillo Periferico, Tegucigalpa" - Tel:2235-XXXX</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
